@@ -112,9 +112,11 @@
     <div class="text-slate-400 opensans">
         by <a href="http://www.bakircinjarevic.com" class="underline hover:text-slate-300 text-inherit cursor-pointer">Bakir Činjarević</a>
     </div>
-    <div class="flex items-center justify-center gap-2 mt-3">
+    <div class="flex items-center justify-center gap-2 mt-3 flex-wrap">
         <div on:click={() => setType('donut')} class={`${type === 'donut' ? 'bg-slate-700' : 'bg-slate-800'} cursor-pointer rounded px-2`}>Donut</div>
         <div on:click={() => setType('cube')}  class={`${type === 'cube' ? 'bg-slate-700' : 'bg-slate-800'} cursor-pointer rounded px-2`}>Cube</div>
+        <div on:click={() => setType('trefoil')}  class={`${type === 'trefoil' ? 'bg-slate-700' : 'bg-slate-800'} cursor-pointer rounded px-2`}>Trefoil</div>
+        <div on:click={() => setType('hyperboloid')}  class={`${type === 'hyperboloid' ? 'bg-slate-700' : 'bg-slate-800'} cursor-pointer rounded px-2`}>Hyperboloid</div>
     </div>
     <div class="border-b-slate-600 border-b pb-3">
         <Slider
